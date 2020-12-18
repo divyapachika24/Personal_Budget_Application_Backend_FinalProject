@@ -1,13 +1,17 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const compression = require('compression');
 require("dotenv").config();
+
 
 // set up express
 
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.use(express.static('./client/build'));
+app.use(compression());
 
 const PORT = process.env.PORT || 5000;
 
