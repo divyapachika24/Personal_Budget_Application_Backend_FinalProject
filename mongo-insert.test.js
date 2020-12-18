@@ -26,20 +26,5 @@ describe('User login Test', () => {
         expect(savedUser.email).toBe(userData.email);
     });
 
-    // it('save budget successfully', async () => {
-    //     budgetData={category:'school',plannedAmount:'1000',userId: user_id};
-    //     const budget=new budgetPlanModel(budgetData);
-    //     const savedBudget = await budget.save();
-    //     expect(savedBudget._id).toBeDefined();
-    //     expect(savedBudget.title).toBe(budgetData.title);
-        
-    // });
-
-    // it('save expense successfully', async () => {
-    //     expenseData={category2:'school',spentAmount:'1000',userId: user_id};
-    //     const expense=new budgetSpentModel(expenseData);
-    //     const savedExpense = await expense.save();
-    //     expect(savedExpense._id).toBeDefined();jest
-    //     expect(savedExpense.title).toBe(expenseData.title);
-    // });
+    //
 })
